@@ -1,0 +1,32 @@
+# Игнорировать системные файлы
+*~
+.DS_Store
+Thumbs.db
+
+# Игнорировать логи и временные файлы
+*.log
+*.tmp
+*.swp
+*.bak
+*.lock
+
+# Игнорировать папки сборки и зависимостей
+/target/
+/dist/
+/build/
+/obj/
+/.vs/
+/Release/
+/Debug/
+/.idea/
+/.vscode/
+/node_modules/
+/bower_components/
+/vendor/
+
+# Игнорировать секретные файлы и файлы с учетными данными
+*.key
+*.pem
+*.cert
+*.secret
+*.json
