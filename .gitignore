@@ -9,6 +9,7 @@ Thumbs.db
 *.swp
 *.bak
 *.lock
+*.txt
 
 # Игнорировать папки сборки и зависимостей
 /target/
