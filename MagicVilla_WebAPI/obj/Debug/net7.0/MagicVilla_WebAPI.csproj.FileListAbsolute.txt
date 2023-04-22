@@ -35,3 +35,5 @@ C:\Coding\Villa\MagicVilla\MagicVilla_WebAPI\obj\Debug\net7.0\refint\MagicVilla_
 C:\Coding\Villa\MagicVilla\MagicVilla_WebAPI\obj\Debug\net7.0\MagicVilla_WebAPI.pdb
 C:\Coding\Villa\MagicVilla\MagicVilla_WebAPI\obj\Debug\net7.0\MagicVilla_WebAPI.genruntimeconfig.cache
 C:\Coding\Villa\MagicVilla\MagicVilla_WebAPI\obj\Debug\net7.0\ref\MagicVilla_WebAPI.dll
+C:\Coding\Villa\MagicVilla\MagicVilla_WebAPI\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Coding\Villa\MagicVilla\MagicVilla_WebAPI\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll

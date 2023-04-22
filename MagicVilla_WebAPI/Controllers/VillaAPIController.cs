@@ -1,11 +1,12 @@
 ﻿using MagicVilla_WebAPI.Controllers.DTO;
 using MagicVilla_WebAPI.Data;
+using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
-using System.Security.Cryptography.X509Certificates;
 using System.Web.Http;
 using FromBodyAttribute = Microsoft.AspNetCore.Mvc.FromBodyAttribute;
 using HttpDeleteAttribute = Microsoft.AspNetCore.Mvc.HttpDeleteAttribute;
 using HttpGetAttribute = Microsoft.AspNetCore.Mvc.HttpGetAttribute;
+using HttpPatchAttribute = Microsoft.AspNetCore.Mvc.HttpPatchAttribute;
 using HttpPostAttribute = Microsoft.AspNetCore.Mvc.HttpPostAttribute;
 using HttpPutAttribute = Microsoft.AspNetCore.Mvc.HttpPutAttribute;
 using RouteAttribute = Microsoft.AspNetCore.Mvc.RouteAttribute;
@@ -109,5 +110,31 @@ namespace MagicVilla_WebAPI.Controllers
 
             return NoContent();
         }
+
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [HttpPatch("{id:int}", Name = "UpdatePartialVilla")]
+        public IActionResult UpdatePartialVilla(int id, JsonPatchDocument<VillaDTO> patchDTO)
+        {
+            if (patchDTO == null || id == 0)
+            {
+                return BadRequest();
+            }
+
+            var villa = VillaStore.VillaList.FirstOrDefault(v => v.Id == id);
+
+            if(villa == null)
+            {
+                return BadRequest();
+            }
+
+            patchDTO.ApplyTo(villa, ModelState);
+
+            if (!ModelState.IsValid)
+            {
+                return BadRequest();
+            }
+            return NoContent();
+        } 
     }
 }   
