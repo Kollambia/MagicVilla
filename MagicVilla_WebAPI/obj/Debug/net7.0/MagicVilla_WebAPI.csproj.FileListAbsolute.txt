@@ -37,13 +37,3 @@ C:\Coding\Villa\MagicVilla\MagicVilla_WebAPI\obj\Debug\net7.0\MagicVilla_WebAPI.
 C:\Coding\Villa\MagicVilla\MagicVilla_WebAPI\obj\Debug\net7.0\ref\MagicVilla_WebAPI.dll
 C:\Coding\Villa\MagicVilla\MagicVilla_WebAPI\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
 C:\Coding\Villa\MagicVilla\MagicVilla_WebAPI\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
-C:\Coding\Villa\MagicVilla\MagicVilla_WebAPI\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
-C:\Coding\Villa\MagicVilla\MagicVilla_WebAPI\bin\Debug\net7.0\Serilog.dll
-C:\Coding\Villa\MagicVilla\MagicVilla_WebAPI\bin\Debug\net7.0\Serilog.AspNetCore.dll
-C:\Coding\Villa\MagicVilla\MagicVilla_WebAPI\bin\Debug\net7.0\Serilog.Extensions.Hosting.dll
-C:\Coding\Villa\MagicVilla\MagicVilla_WebAPI\bin\Debug\net7.0\Serilog.Extensions.Logging.dll
-C:\Coding\Villa\MagicVilla\MagicVilla_WebAPI\bin\Debug\net7.0\Serilog.Formatting.Compact.dll
-C:\Coding\Villa\MagicVilla\MagicVilla_WebAPI\bin\Debug\net7.0\Serilog.Settings.Configuration.dll
-C:\Coding\Villa\MagicVilla\MagicVilla_WebAPI\bin\Debug\net7.0\Serilog.Sinks.Console.dll
-C:\Coding\Villa\MagicVilla\MagicVilla_WebAPI\bin\Debug\net7.0\Serilog.Sinks.Debug.dll
-C:\Coding\Villa\MagicVilla\MagicVilla_WebAPI\bin\Debug\net7.0\Serilog.Sinks.File.dll

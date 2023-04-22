@@ -1,15 +1,9 @@
 using Microsoft.Extensions.Logging.Abstractions;
-using Serilog;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-Log.Logger = new LoggerConfiguration().
-    MinimumLevel.Debug().
-    WriteTo.File("log/villLogs.txt", rollingInterval: RollingInterval.Day).
-    CreateLogger();
-
-builder.Host.UseSerilog();
 
 // Добавление возможности получать данные как из JSON так и из XML
 builder.Services.AddControllers(option =>
